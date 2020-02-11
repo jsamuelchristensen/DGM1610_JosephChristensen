@@ -847,13 +847,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613346644}
-  m_LocalRotation: {x: 0.036166348, y: -0.93082064, z: 0.1674277, w: 0.32285127}
-  m_LocalPosition: {x: 222, y: 128.1, z: 279.9}
+  m_LocalRotation: {x: 0.18499412, y: 0.04262909, z: 0.0021828609, w: 0.98181224}
+  m_LocalPosition: {x: -10, y: 39, z: -79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 19.575, y: -141.31401, z: 2.4810002}
+  m_LocalEulerAnglesHint: {x: 21.289001, y: 5.2040005, z: 1.2340001}
 --- !u!1 &625001676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2931,7 +2931,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &1487716481
 MonoBehaviour:
@@ -2949,6 +2949,8 @@ MonoBehaviour:
   turnSpeed: 145
   verticalInput: 0
   horizontalInput: 0
+  projectilePrefab: {fileID: 398063197729926254, guid: 893f893b7b2c4d94885e406a299a17f2,
+    type: 3}
 --- !u!1 &1532011586
 GameObject:
   m_ObjectHideFlags: 0
