@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &748397752476671137
+--- !u!1 &6596427997990461515
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 748397752476671130}
-  - component: {fileID: 748397752476671141}
-  - component: {fileID: 748397752476671140}
-  - component: {fileID: 748397752476671143}
-  - component: {fileID: 748397752476671142}
+  - component: {fileID: 6596427997990461517}
+  - component: {fileID: 6596427997990461516}
+  - component: {fileID: 6596427997990461519}
+  - component: {fileID: 6596427997990461518}
+  - component: {fileID: 6596427997990461513}
+  - component: {fileID: 6596427997990461512}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Larger Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &748397752476671130
+--- !u!4 &6596427997990461517
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748397752476671137}
+  m_GameObject: {fileID: 6596427997990461515}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -143.3, y: 71.6, z: -40.81016}
-  m_LocalScale: {x: 3.0089, y: 3.0089, z: 3.0089}
+  m_LocalPosition: {x: -59.6, y: 17.8, z: -24.7}
+  m_LocalScale: {x: 9.414162, y: 10.184045, z: 9.414162}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &748397752476671141
+--- !u!33 &6596427997990461516
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748397752476671137}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &748397752476671140
+  m_GameObject: {fileID: 6596427997990461515}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &6596427997990461519
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748397752476671137}
+  m_GameObject: {fileID: 6596427997990461515}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -79,33 +80,49 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &748397752476671143
+--- !u!136 &6596427997990461518
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748397752476671137}
+  m_GameObject: {fileID: 6596427997990461515}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &748397752476671142
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &6596427997990461513
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748397752476671137}
+  m_GameObject: {fileID: 6596427997990461515}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd1e9958b42799a46a7133dd997d2ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  target: {fileID: 9148698484421270856, guid: 38c383ce9b9356a47bb2b82109c9a663, type: 3}
-  moveSpeed: 95
-  damage: 5
+  target: {fileID: 0}
+  moveSpeed: 50
+  damage: 0
+--- !u!114 &6596427997990461512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6596427997990461515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd1e9958b42799a46a7133dd997d2ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  target: {fileID: 0}
+  moveSpeed: 35
+  damage: 10
