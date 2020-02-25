@@ -847,13 +847,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613346644}
-  m_LocalRotation: {x: 0.18499412, y: 0.04262909, z: 0.0021828609, w: 0.98181224}
-  m_LocalPosition: {x: -10, y: 39, z: -79}
+  m_LocalRotation: {x: 0.3928921, y: 0.04209276, z: -0.007085427, w: 0.91859335}
+  m_LocalPosition: {x: -13.2, y: 136, z: -94.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 21.289001, y: 5.2040005, z: 1.2340001}
+  m_LocalEulerAnglesHint: {x: 46.254, y: 5.9570003, z: 1.6620001}
 --- !u!1 &625001676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2953,8 +2953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b185f5e7441dbdd41b88093567834596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 150
-  turnSpeed: 180
+  speed: 200
+  turnSpeed: 225
   verticalInput: 0
   horizontalInput: 0
   projectilePrefab: {fileID: 398063197729926254, guid: 893f893b7b2c4d94885e406a299a17f2,
@@ -4488,6 +4488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
+  - {fileID: 6596427997990461515, guid: 225634653650e4d49b9ab6a7d717600f, type: 3}
   - {fileID: 748397752476671137, guid: 74e9d69b78c067d40853558727d8939b, type: 3}
   enemyIndex: 0
 --- !u!4 &1881981850
@@ -5310,11 +5311,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9148698484421270860, guid: 38c383ce9b9356a47bb2b82109c9a663,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 9148698484421270856, guid: 38c383ce9b9356a47bb2b82109c9a663,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5370,15 +5366,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9148698484421270860, guid: 38c383ce9b9356a47bb2b82109c9a663,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 9148698484421270966, guid: 38c383ce9b9356a47bb2b82109c9a663,
         type: 3}
       propertyPath: turnSpeed
-      value: 180
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 9148698484421270966, guid: 38c383ce9b9356a47bb2b82109c9a663,
         type: 3}
       propertyPath: speed
-      value: 150
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38c383ce9b9356a47bb2b82109c9a663, type: 3}
