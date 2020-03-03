@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 748397752476671143}
   - component: {fileID: 748397752476671142}
   - component: {fileID: 4959426035184925535}
+  - component: {fileID: 4414882090840523419}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +108,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  target: {fileID: 9148698484421270856, guid: 38c383ce9b9356a47bb2b82109c9a663, type: 3}
   moveSpeed: 95
   damage: 5
 --- !u!54 &4959426035184925535
@@ -126,3 +126,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4414882090840523419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748397752476671137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63031488e05dc2e4ab3e9f5ab6fc642d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 3
+  spawnPoint: {fileID: 0}
+  points: 10
