@@ -2957,6 +2957,8 @@ MonoBehaviour:
   turnSpeed: 225
   verticalInput: 0
   horizontalInput: 0
+  jumpHeight: 8
+  isGrounded: 0
   projectilePrefab: {fileID: 398063197729926254, guid: 893f893b7b2c4d94885e406a299a17f2,
     type: 3}
 --- !u!1 &1532011586
@@ -5401,6 +5403,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9148698484421270967, guid: 38c383ce9b9356a47bb2b82109c9a663,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148698484421270967, guid: 38c383ce9b9356a47bb2b82109c9a663,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9148698484421270966, guid: 38c383ce9b9356a47bb2b82109c9a663,
         type: 3}
       propertyPath: turnSpeed
@@ -5410,6 +5422,11 @@ PrefabInstance:
         type: 3}
       propertyPath: speed
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148698484421270966, guid: 38c383ce9b9356a47bb2b82109c9a663,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38c383ce9b9356a47bb2b82109c9a663, type: 3}

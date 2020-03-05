@@ -9,17 +9,28 @@ public class Moves : MonoBehaviour
     public float verticalInput;
     public float horizontalInput;
 
+    public float jumpHeight;
+    public bool isGrounded;
+
+    private Rigidbody rb;
+
     public GameObject projectilePrefab;
   
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
+       
+    }
+
+    private void FixedUpdate()
+    {
+
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
 
@@ -27,32 +38,31 @@ public class Moves : MonoBehaviour
         transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
         //(x,y,z)
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            rb.AddForce(Vector3.up * jumpHeight * 1000);
         }
     }
 
     // detect collison with another object
-   /* public void OnCollisionEnter(Collision other)
-    {
-    if (other.gameObject.CompareTag("Floor"))//Primary
+     public void OnCollisionEnter(Collision other)
+     {
+        if (other.gameObject.CompareTag("Floor"))//Primary
 
-    {
-            Debug.Log("Colliding with Floor");
-    }
-    else if (other.gameObject.CompareTag("Obstacle"))//Secondary
-    {
-            Debug.Log("Colliding with Obstacle");
+            isGrounded = true;
+             Debug.Log("Colliding with Floor");
+     }
 
-    }
-    else //Default, tertiary
+    private void OnCollisionExit(Collision other)
     {
-            Debug.Log("...");
+        if (other.gameObject.CompareTag("Floor"))
+            isGrounded = false;
+        Debug.Log("Not Colliding with Floor");
     }
-    }
-    public void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("You entered the trigger!");
-    }*/
+
 }
